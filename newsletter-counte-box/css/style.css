@@ -1,0 +1,273 @@
+/*======================
+   01. Google fonts
+========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/*======================
+   02. Basic css
+========================*/
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 3rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	background: #ffffff;
+	color: #1B2945;
+	font-family: 'Poppins', sans-serif;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+html {
+    font-size: 62.5%; /*1 rem = 10px*/
+}
+
+
+.newsletter_counter_wrapper {
+	background: rgb(37 28 201 / 20%);
+	padding: 7rem 0;
+	height: 100vh;
+}
+
+.newsletter_counter_wrap {
+	border-radius: 3rem;
+	background: #1B2945;
+	padding: 2rem;
+	height: 35rem;
+	margin-bottom: 5.5rem;
+	position: relative;
+}
+
+.newsletter_counter_wrap .row {
+	height: 100%;
+}
+
+.newsletter_counter_wrap .dont_findshape01 {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 52.3rem;
+}
+
+.newsletter_counter_wrap .dont_findshape02 {
+	width: 7.8rem;
+	position: absolute;
+	top: 5rem;
+	right: -4rem;
+}
+
+.newsletter_counter_wrap .dont_findimg {
+	left: -3%;
+	bottom: 0;
+	text-align: left;
+	position: absolute;
+}
+
+.newsletter_counter_wrap h3 {
+	font-size: 2.2rem;
+	line-height: 3.2rem;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.newsletter_counter_wrap h3 span {
+	font-weight: 400 !important;
+}
+
+.newsletter_counter_wrap a {
+	height: 4.6rem;
+	padding: 0 2rem;
+	border-radius: 10rem;
+	background: #251CC9;
+	display: inline-flex;
+	align-items: center;
+	flex-shrink: 0;
+	font-weight: 500;
+	color: #ffffff;
+	transition: .3s;
+	margin-top: 2rem;
+}
+
+.newsletter_counter_wrap a i {
+	margin-left: 1rem;
+}
+
+.newsletter_counter_wrap a:hover {
+	color: #ffffff;
+	background: #2d22ec;
+}
+
+
+.counter_box {
+	max-width: 85rem;
+	width: 100%;
+	padding: 2.5rem 4rem;
+	border-radius: 3rem;
+	background: #ffffff;
+	box-shadow: 0 2rem 3rem 0 rgba(143, 165, 208, 0.22);
+	bottom: -5.5rem;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.counter_box .counter_item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding-right: 4.5rem;
+	margin-right: 4.5rem;
+	flex-shrink: 0;
+}
+
+.counter_box .counter_item::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	background-image: url(../img/dot_border.svg);
+	width: 0.2rem;
+	height: 62%;
+	transform: translateY(-50%);
+}
+
+.counter_box .counter_item h4 {
+	color: #FF8E08 !important;
+	font-size: 2.2rem;
+	line-height: 3.2rem;
+	margin-right: 2rem;
+	font-weight: 700;
+}
+
+.counter_box .counter_item h4 span {
+	color: #FF8E08 !important;
+}
+
+.counter_box .counter_item p {
+	line-height: 2rem;
+	font-weight: 600;
+}
+
+.counter_box .counter_item span {
+	color: #8FA5D0;	
+} 
+
+.last_border {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.last_border::before {
+	display: none;
+}
+
+
+@media (max-width: 1399px){
+	
+}
+@media (min-width: 1400px) { 
+	
+}
+@media (min-width: 1200px) {
+ 
+	.container {
+	    max-width: 109rem;
+	}
+
+}
+
+@media (max-width: 1199px) { 
+
+	.newsletter_counter_wrap .dont_findshape02 {
+	    right: -2rem;
+	}
+
+
+}
+
+@media (max-width: 991px) {
+	.newsletter_counter_wrap .dont_findimg {
+		display: none;
+	}
+
+	.newsletter_counter_wrap {
+		text-align: center;
+	}
+
+	.counter_box {
+	    flex-wrap: wrap;
+	    transform: translateX(-0);
+	    bottom: auto !important;
+	    left: auto !important;
+	    position: relative !important;
+	}
+
+	.newsletter_counter_wrap {
+		margin-bottom: 3rem;
+		height: 25rem;
+	}
+
+	.newsletter_counter_wrapper {
+	    height: auto;
+	}
+
+	.newsletter_counter_wrap .dont_findshape01 {
+		display: none;
+	}
+
+	.newsletter_counter_wrap .dont_findshape02 {
+		display: none;
+	}
+
+}
+
+@media (max-width: 767px) {
+		
+}
+
+@media (max-width: 575px) {
+
+}
+
